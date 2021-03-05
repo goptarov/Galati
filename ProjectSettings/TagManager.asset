@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - StartPos
+  - Collectable
+  - Door
   layers:
   - Default
   - TransparentFX

@@ -11,12 +11,15 @@ public class PlayerMovement : MonoBehaviour
     public Transform feet;
     public LayerMask groundLayers;
     public GameObject[] players;
+    public List<string> inventory;
+    public string ItemType;
 
     float mx;
 
     void Start()
     {
         DontDestroyOnLoad(gameObject);
+        inventory = new List<string>();
     }
     private void Update()
     {
@@ -71,5 +74,4 @@ public class PlayerMovement : MonoBehaviour
     {
         transform.position = GameObject.FindWithTag("StartPos").transform.position;
     }
-
 }
